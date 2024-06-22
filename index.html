@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайный текст</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #randomText {
+            font-size: 24px;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="randomText"></div>
+
+    <script>
+        // Массив с текстами
+        const texts = [
+            "Get into the moment. It’s perfect ♡",
+            "You will get there. But right now you’re here. (and here is wonderful) ♡",
+            "The beauty you see in anything is a reflection of the beauty in You ♡",
+            "The simple fact : you’ll never get the same moment twice and that’s what makes our life meaningful ♡",
+            "Be the reason someone feels welcomed, seen, heard, valued, loved and supported ♡",
+            "What if it all works out? Take courage, dear heart ♡",
+            "Enjoy the present ♡",
+            "Where have u seen God today? ♡",
+            "Allow yourself to shine ♡",
+            "You have potential to make beautiful things. Yes, You ♡",
+            "Make decisions from the perspective of who you want to become ♡",
+            "It’s not about trying harder. Softness opens doors that force cannot move ♡",
+            "Every person is a new door to a different world ♡",
+            "The move you’re most scared to make is the one that will change everything for you ♡",
+            "Trust the magic of new beginnings ♡",
+            "Hey dreamer, are you ready? ♡",
+            "Everything is a sign, learn to read it ♡",
+            "Everything comes to you at the right time ♡",
+            "You are art. Create yourself over&over. We are grateful that you are here ♡",
+            "Nothing that is observed is unaffected by the observer ♡",
+            "Reveal your individuality ♡",
+            "Visualise your highest self, then show up as her ♡",
+            "If not now then when? If not you then who? ♡",
+            "Get inspired. Spread kindness everywhere. Be the one who helps others shine and shows them the way. Be the magic that reaches out to those who may feel unseen ♡",
+            "The Universe isn’t interested in your achievements.. just your heart. When you choose to act out of kindness, compassion and love, you are already aligned with your true purpose ♡",
+            "You will never miss what’s meant for you ♡",
+            "Everything you want is on the other side of fear ♡",
+            "Remember when you wanted what you currently have ♡",
+            "The currency of this earth is energy ♡",
+            "You are your home. Take care of yourself ♡",
+            "Go where you feel the most alive ♡",
+            "If you love life, life will love you back ♡",
+            "You are already that person.. just put yourself in that place ♡",
+            "Your 3 homes: body, mind, earth. take proper care of them ♡",
+            "The universe is ready to make your dreams happen ♡",
+            "You are always have something to be grateful for, because you are alive ♡",
+            "May the love blossom in your heart and fill the world with its kindness ♡",
+            "In a world where you can be anything, be kind ♡",
+            "Make each day your masterpiece ♡",
+            "If it meant to be, it will be ♡",
+            "You are free-thinking reality maker ♡",
+            "Every time you look in the mirror greet yourself with words: “I’m as I am” and capture this moment in a mirror selfie ♡",
+            "Be brave enough to hear your true inner voice ♡",
+            "You are made from the same energy source that created the oceans, forests, mountains, valleys and all the stars in the sky. So, YOU have the strength + power to create whatever you desire ♡",
+            "Sit in front of the sea, listen to the waves. They are calling you. ♡"
+        ];
+
+        // Функция для выбора случайного текста
+        function getRandomText() {
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            return texts[randomIndex];
+        }
+
+        // Установить случайный текст на странице
+        document.getElementById("randomText").innerText = getRandomText();
+    </script>
+</body>
+</html>
